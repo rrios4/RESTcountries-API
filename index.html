@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script defer src="./script.js"></script>
+    
+    <title>Assignment 4</title>
+</head>
+<body>
+    <div>
+        <h1>Assignment 4: Search Country by Name</h1>
+        <p>Click on search button please!</p>    
+    </div>
+   <div id="contentContainer">
+        <div id="countrySearchContainer">
+            <form method="GET" >
+                <label>Country Name:</label>
+                <input type="search" name="countryField" id="countryField" value="">
+                <input type="button" id="search" value="Search" onclick="data()">
+            </form>
+            <h3>Country Name: </h3>
+            <p id="displayName"> </p>
+            <h3>Flag: </h3>
+            <p id="flagLink"></p>
+            <div id="mapLink"></div><br><br>
+        </div>
+
+        <div id="regionContainer">
+            <form method="GET">
+                <label>Region Name:</label>
+                <input type="search" name="regionField" id="regionField" value="">
+                <input type="button" name="searchRegion" id="searchRegion" value="Search" onclick="region()"> 
+            </form>
+            <h3>Region Name: </h3>
+            <p id="displayRegion"> </p>
+            <h3>All Countries </h3>
+            <div id="displayAllCountries"></div>
+        </div>
+        <div>
+            <H3 id="jsonData">Refresh Page After Each Search!</H3>
+        </div>
+    
+</body>
+</html>

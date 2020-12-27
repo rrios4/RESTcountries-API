@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #545454;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(119, 139, 253);
+}
+
+h1{
+    letter-spacing: 5px;
+}
+
+h3{
+    letter-spacing: 2px;
+}
+
+
+.contentContainer{
+    display: flex;
+    align-content: center;
+}
+
+.countrySearchContainer{
+
+}
